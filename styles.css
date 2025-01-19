@@ -1,31 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
+* {  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   transition: all.2s linear;
   text-decoration: none;
   border: none;
 }
-
-html {
-  font-size: 62.5%;
-  overflow-x: hidden;
-  scroll-padding-top: 7em;
-  scroll-behavior: smooth;
-}
-
-
-
-
-
-body {
-  position: relative;
-}
-
-
 
 header {
   position: fixed;
@@ -43,7 +22,7 @@ header {
 }
 
 header .logo {
-  color: #ea1f33;
+  color: #481fea;
   font-size: 25px;
   font-weight: bold;
 }
@@ -69,12 +48,17 @@ header .logo span {
 }
 
 .menu li a:hover {
-  color: #ea1f33;
+  color: #1f1fea;
 }
 
 header button {
-  background-color: #ea1f33;
+  background-color: #331fea72;
   cursor: pointer;
   color: #fff;
   padding: 5px 25px;
+}
+div.img-k img{ 
+width: 1550px;
+height: 500px;
+
 }
