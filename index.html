@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Products Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Digital Products Store</h1>
+      <nav>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="products" class="container">
+      <h2>Our Products</h2>
+      <div class="product-list">
+        <div class="product">
+          <img src="product1.jpg" alt="Product 1">
+          <h3>Template Design</h3>
+          <p>$10.00</p>
+          <button onclick="buyProduct('Template Design', 10)">Buy Now</button>
+        </div>
+        <div class="product">
+          <img src="product2.jpg" alt="Product 2">
+          <h3>Excel Budget Sheet</h3>
+          <p>$5.00</p>
+          <button onclick="buyProduct('Excel Budget Sheet', 5)">Buy Now</button>
+        </div>
+        <div class="product">
+          <img src="product3.jpg" alt="Product 3">
+          <h3>E-book Guide</h3>
+          <p>$8.00</p>
+          <button onclick="buyProduct('E-book Guide', 8)">Buy Now</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container">
+      <h2>About Us</h2>
+      <p>Welcome to our store! We offer high-quality digital products to help you save time and boost productivity.</p>
+    </section>
+
+    <section id="contact" class="container">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" rows="5" required></textarea>
+        
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Digital Products Store. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
