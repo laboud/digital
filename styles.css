@@ -1,77 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  transition: all.2s linear;
+  text-decoration: none;
+  border: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7em;
+  scroll-behavior: smooth;
+}
+
+
+
+
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-  }
-  
-  header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-  }
-  
-  header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  header nav a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 1rem;
-  }
-  
-  header nav a:hover {
-    text-decoration: underline;
-  }
-  
-  .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  h1, h2 {
-    text-align: center;
-  }
-  
-  .product-list {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .product {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    text-align: center;
-    width: 300px;
-  }
-  
-  .product img {
-    width: 100%;
-    height: auto;
-  }
-  
-  button {
-    background: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background: #0056b3;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 1rem 0;
-    background: #333;
-    color: #fff;
-  }
-  
+  position: relative;
+}
+
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 8%;
+  height: 50px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+header .logo {
+  color: #ea1f33;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+header .logo span {
+  color: #000;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.menu li a {
+  font-size: 14px;
+  color: #000;
+  font-weight: 300;
+  transition: 0.2s;
+}
+
+.menu li a:hover {
+  color: #ea1f33;
+}
+
+header button {
+  background-color: #ea1f33;
+  cursor: pointer;
+  color: #fff;
+  padding: 5px 25px;
+}
